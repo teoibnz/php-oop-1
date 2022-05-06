@@ -35,42 +35,55 @@ $BatmanDarkKnight = new Movie('Batman - The Dark Knight', "Christian Bale", 2008
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
-    <div>
-        <h1>
-            Film:  <?php echo($BatmanBegins->get_movieName("movieName")) ?>
-        </h1>
-        <h1>
-            Attore protagonista:  <?php echo($BatmanBegins->get_actors("actors")) ?>
-        </h1>
-        <h1>
-            Anno di uscita:  <?php echo($BatmanBegins->get_yearOFPubblication("yearOfPubblication")) ?>
-        </h1>
-    </div>
+    <main>
+        <div class="film-container">
+            <div>
+                <h1>
+                    Film:  <?php echo($BatmanBegins->get_movieName("movieName")) ?>
+                </h1>
+                <h1>
+                    Attore protagonista:  <?php echo($BatmanBegins->get_actors("actors")) ?>
+                </h1>
+                <h1>
+                    Anno di uscita:  <?php echo($BatmanBegins->get_yearOFPubblication("yearOfPubblication")) ?>
+                </h1>
+            </div>
+            <div>
+                <img src="https://pad.mymovies.it/filmclub/2004/08/003/locandina.jpg" alt="">
+            </div>
+        </div>
 
-    <br>
+        <br>
 
-    <div>
-        <h1>
-            Film:  <?php echo($BatmanDarkKnight->get_movieName("movieName")) ?>
-        </h1>
-        <h1>
-            Attore protagonista:  <?php echo($BatmanDarkKnight->get_actors("actors")) ?>
-        </h1>
-        <h1>
-            Anno di uscita:  <?php echo($BatmanDarkKnight->get_yearOFPubblication("yearOfPubblication")) ?>
-        </h1>
-    </div>
+        <div class="film-container">
+            <div>
+                <h1>
+                    Film:  <?php echo($BatmanDarkKnight->get_movieName("movieName")) ?>
+                </h1>
+                <h1>
+                    Attore protagonista:  <?php echo($BatmanDarkKnight->get_actors("actors")) ?>
+                </h1>
+                <h1>
+                    Anno di uscita:  <?php echo($BatmanDarkKnight->get_yearOFPubblication("yearOfPubblication")) ?>
+                </h1>
+            </div>
+            <div>
+                <img src="https://pad.mymovies.it/filmclub/2007/02/131/locandina.jpg" alt="">
+            </div>
+        </div>
 
-    <div>
-        <?php var_dump($BatmanBegins);?>
-    </div>
+        <!-- <div>
+            <?php var_dump($BatmanBegins);?>
+        </div>
 
-    <div>
-        <?php var_dump($BatmanDarkKnight);?>
-    </div>
+        <div>
+            <?php var_dump($BatmanDarkKnight);?>
+        </div> -->
+    </main>
     
 </body>
 </html>
