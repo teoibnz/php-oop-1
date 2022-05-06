@@ -27,10 +27,6 @@ class Movie{
 
 $BatmanBegins = new Movie('Batman Begins', "Christian Bale", 2005);
 $BatmanDarkKnight = new Movie('Batman - The Dark Knight', "Christian Bale", 2008);
-
-var_dump($BatmanBegins);
-var_dump($BatmanDarkKnight);
-
 ?>
 
 <!DOCTYPE html>
@@ -55,7 +51,7 @@ var_dump($BatmanDarkKnight);
     </div>
 
     <br>
-    
+
     <div>
         <h1>
             Film:  <?php echo($BatmanDarkKnight->get_movieName("movieName")) ?>
@@ -67,5 +63,14 @@ var_dump($BatmanDarkKnight);
             Anno di uscita:  <?php echo($BatmanDarkKnight->get_yearOFPubblication("yearOfPubblication")) ?>
         </h1>
     </div>
+
+    <div>
+        <?php var_dump($BatmanBegins);?>
+    </div>
+
+    <div>
+        <?php var_dump($BatmanDarkKnight);?>
+    </div>
+    
 </body>
 </html>
